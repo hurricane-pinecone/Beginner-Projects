@@ -1,12 +1,6 @@
-const readline = require("readline");
+import { rl } from "./helpers.js";
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-  prompt: "Welcome to palindrome checker. Enter a word:\n",
-});
-
-// This prints the initial prompt as configured above.
+// This prints the initial prompt as configured in `helpers.js`.
 rl.prompt();
 
 // The 'processInput' function fires every time the user enters some input
@@ -15,7 +9,8 @@ rl.addListener("line", processInput);
 /*
  * Log wether the word input be the user is a palindrome or not.
  *
- * HINT: Compare input to the result of `getReversedString`, then use an if else block to log.
+ * HINT:
+ * 1. Compare input to the result of `getReversedString`, then use an if else block to log.
  */
 function processInput(input) {}
 
