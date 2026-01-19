@@ -13,8 +13,9 @@ rl.prompt();
 rl.addListener("line", processInput);
 
 /*
- * 1. Compare input to the result of `getReversedString`.
- * 2. Using an if else statement, Log whether the word is or isn't a palindrome (The same word backwards and forwards, IE, racecar).
+ * Log wether the word input be the user is a palindrome or not.
+ *
+ * HINT: Compare input to the result of `getReversedString`, then use an if else block to log.
  */
 function processInput(input) {}
 
